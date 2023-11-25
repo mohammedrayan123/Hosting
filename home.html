@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 style="text-align: center;">Home Page</h1>
+    <table border="2" , cellpadding="10" style="width: 100%;">
+        <thead>
+            <tr>
+                <th><img src="C:\Users\asus\Downloads\download (1) (1) (1).png" , height="100px" , width="100px"></th>
+                <th colspan="2">
+                    <h2>Mayudi's Gym</h2>
+                    <p>#420, footpath, near gutter, 420-139</p>
+                </th>
+
+                <!-- <th>Prize</th> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="3"><a href="webinar.html">Link 1</a> <a href="https://scholar.google.com/">Link 2</a> <a
+                        href="https://scholar.google.com/">Link 3</a>
+                    <a href="https://scholar.google.com/">Link 4</a>
+                </td>
+                <!-- <td>Mayudi</td>
+                <td>$100,000</td> -->
+            </tr>
+            <tr style="height: 500px; text-align:center;">
+                <td colspan="3"><img src="C:\Users\asus\Pictures\imgblood1.jpg"></td>
+                <!-- <td>Yashi</td>
+                <td>$10,000</td> -->
+            </tr>
+            <tr>
+                <td>Notification</td>
+                <td colspan="2">Contact</td>
+                <!-- <td>$150,000</td> -->
+            </tr>
+            <tr style="text-align: center;">
+                <td colspan=3">Thank You</td>
+                <!-- <td>Nishi</td>
+                <td>$150,000</td> -->
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="container">
+        <form align="center" , width="100%">
+
+            <table border="2" , cellpadding="10">
+                <tr>
+                    <td colspan="2">
+                        <h4 align="center">Sample Form</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Name: </label></td>
+                    <td><input type="text" name="name" placeholder="Enter Name"></td>
+                </tr>
+                <tr>
+                    <td><label>Phone: </label></td>
+                    <td><input type="phone" name="phone" placeholder="Enter Phone Number"></td>
+                </tr>
+                <tr>
+                    <td><label>Email: </label></td>
+                    <td><input type="email" name="email" placeholder="Enter Email"></td>
+                </tr>
+                <tr>
+                    <td><label>Gender: </label></td>
+                    <td><input type="radio" name="gender" value="male">Male<input type="radio" name="gender"
+                            value="female">Female</td>
+
+                </tr>
+                <tr>
+                    <td><label>Hobby: </label></td>
+                    <td><input type="checkbox" name="bike" value="Bike Ride">Bike Ride<input type="checkbox" name="food"
+                            value="Food">Food<input type="checkbox" name="music" value="Music">Music</td>
+
+                </tr>
+                <tr>
+                    <td><label>Address: </label></td>
+                    <td><textarea name="add" placeholder="Enter Address"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label>Profile: </label></td>
+                    <td><input type="file" name="profile"></td>
+                </tr>
+                <tr>
+                    <td><label>Age: </label></td>
+                    <td><select name="select">
+                            <option>0-10</option>
+                            <option>10-20</option>
+                            <option>20-30</option>
+                            <option>40-50</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit"></td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+
+
+    <div>
+        <form>
+            <table>
+                <tr>
+                    <td>
+                        <input type="button" value="1" id="one">
+                        <input type="button" value="2" id="two">
+                        <input type="button" value="3" id="three">
+                        <input type="button" value="+" onclick="add()">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="4" id="four">
+                        <input type="button" value="5" id="five">
+                        <input type="button" value="6" id="six">
+                        <input type="button" value="-" onclick="sub()">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="7" id="one">
+                        <input type="button" value="8" id="two">
+                        <input type="button" value="9" id="three">
+                        <input type="button" value="*" onclick="mul()">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="reset" value="C" id="reset">
+                        <input type="button" value="0" id="zero">
+                        <input type="button" value="R" id="r">
+                        <input type="button" value="/" onclick="div()">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+
+    <div class="container">
+        <div class="cal-box">
+            <form name="calculator">
+                <input type="text" id="display" placeholder="0" readonly>
+                <br>
+                <table>
+                    <tr>
+                        <td><input class="button" type="button" value="7" onclick="calculator.display.value +='7'"></td>
+                        <td><input class="button" type="button" value="8" onclick="calculator.display.value +='8'"></td>
+                        <td><input class="button" type="button" value="9" onclick="calculator.display.value +='9'"></td>
+                        <td><input class="button mathbutton" type="button" value="+"
+                                onclick="calculator.display.value +='+'"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="button" type="button" value="4" onclick="calculator.display.value +='4'"></td>
+                        <td><input class="button" type="button" value="5" onclick="calculator.display.value +='5'"></td>
+                        <td><input class="button" type="button" value="6" onclick="calculator.display.value +='6'"></td>
+                        <td><input class="button mathbutton" type="button" value="-"
+                                onclick="calculator.display.value +='-'"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="button" type="button" value="1" onclick="calculator.display.value +='1'"></td>
+                        <td><input class="button" type="button" value="2" onclick="calculator.display.value +='2'"></td>
+                        <td><input class="button" type="button" value="3" onclick="calculator.display.value +='3'"></td>
+                        <td><input class="button mathbutton" type="button" value="*"
+                                onclick="calculator.display.value +='*'"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="button clearButton" type="button" value="C"
+                                onclick="calculator.display.value =''"></td>
+                        <td><input class="button" type="button" value="0" onclick="calculator.display.value +='0'"></td>
+                        <td><input class="button mathbutton" type="button" value="="
+                                onclick="calculator.display.value =eval(calculator.display.value)"></td>
+                        <td><input class="button mathbutton" type="button" value="/"
+                                onclick="calculator.display.value +='/'"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
